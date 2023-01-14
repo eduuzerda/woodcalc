@@ -1,0 +1,130 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif, arial;
+}
+
+body{
+	background: linear-gradient(45deg,rgb(0,0,0),rgb(0, 102, 153));
+}
+
+.container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+
+.calculator {
+	position: relative;
+	width: 320px;
+	height: auto;
+	padding: 20px;
+	border-radius: 20px;
+	background: linear-gradient(45deg,rgb(200,200,200),rgb(240, 240, 240));
+	box-shadow: 0 0 30px #000;
+}
+
+header{
+	color: #1b1b1b;
+	text-align: center;
+	padding: 15px 0; 
+}
+
+header h3{
+	font-style: italic;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bolder;
+	color:  #000;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 20px;
+	padding:6px 10px;
+	background: rgb(230, 167, 0);
+}
+
+form{
+	background: linear-gradient(to bottom,rgb(255, 190, 27),rgb(230, 167, 0)); ;
+	border-radius: 10px;
+	text-align: center;
+	
+}
+
+label{
+	color: #000;
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+
+input{
+	width: 90px;
+	height: auto;
+	padding: 5px 0;
+	display: block;
+	margin: auto;
+	background: rgb(240, 240, 240);
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	color:  #000;
+	font-size: 2em;
+	font-weight: bolder;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance:  none;
+	margin: 0;
+}
+
+
+#calc{
+	width: 40%;
+	margin: 15px 0;
+	padding: 15px 0;
+	background: linear-gradient(to bottom,rgb(43,43,43),#000);
+	color: #fff;
+	border-radius: 50px;
+	border: 0;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 1em;
+}
+
+#calc:active {
+	transform: scale(.95);
+	transition: .6s;
+}
+
+#result {
+	display: none;
+	margin: 15px auto;
+	padding: 20px ;
+	font-size: 1.5em;
+	box-sizing: border-box;
+	border-radius: .15em;
+	background: #1b1b1b;
+	color: #fff;
+	font-weight: bolder;
+	text-align: center;
+}
+
+
+footer{
+	margin-top: 20px;
+	font-size: 15px;
+	text-align: center;
+	color:  #1b1b1b;
+}
